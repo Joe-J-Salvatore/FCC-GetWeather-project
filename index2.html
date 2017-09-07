@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Your Weather</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+      
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Your Local Weather</h1>
+        <button id="getLocated" onclick="getUser()">Click here, Get Located!</button>
+        
+        <div class="container">
+            <div id="city"></div>
+            <div class="temperature"><span id='temperature'></span>&degF</div>
+            <div class="icon"><img id="icon" src=""</div>
+            <div class="humidity">Humidity: <span id="humidity"></span>&#37</div>
+            <div id="condition"></div>
+            <div class="wind-speed">Wind: <span id="wind-speed"></span> mph </div>
+            <div id="direction"></div>
+        </div>
+        
+        <div class="enterLoc">            
+                <h5>Enter a location <span id="paren">(city or zipcode)</span>:</h5>
+                <div class="field">
+                    <input type="text" id="location" placeholder="Honolulu">
+                    <button id="submit"onclick="formSubmission()">Get Weather</button>
+                </div>
+        </div>
+        
+        <footer>
+            <p>Weather data: <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        </footer>
+        
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+      <script src="script2.js"></script>
+    </body>
+</html>
